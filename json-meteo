@@ -49,7 +49,9 @@
       contenitore1.appendChild(tmin);
   
       const tmax = document.createElement('p');
-      tmax.innerHTML = '<strong>Temperatura minima: </strong>'+tempMax;
+      //Metodo alternativo per utilizzare le variabili all'interno di stringhe
+      //NB: l'apostrofo utilizzato è il backtick
+      tmax.innerHTML = `<strong>Temperatura minima: </strong>${tempMax}`;
       contenitore1.appendChild(tmax);
   
       const img = document.createElement('img');
